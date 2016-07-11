@@ -2,23 +2,26 @@
 Semi-automated process to create an audiobook (in m4b format) from markdown files. For further info and a bit of context, check: http://www.publishinglab.nl/blog/2016/07/11/craft-your-own-audiobook/ ‎
 
 For this process, you'll need:
-  -one or more text files in <a href="https://daringfireball.net/projects/markdown/syntax">markdown</a> format (each chapter should have its own file, they should all be located inside directory 'md')
-  -a cover image (jpg or png)
-  -a YAML file containing chapter names (simply edit toc.yaml)
-  -<a href="https://www.python.org/downloads/">python</a>
-  -<a href="http://pandoc.org/installing.html">pandoc</a>
-  -<a href="http://www.speech.cs.cmu.edu/flite/doc/flite_4.html">flite</a>
-  -sox (available as package or you can compile)
-  -<a href="https://ffmpeg.org/download.html">ffmpeg</a>
-  -ffprobe (installed with ffmpeg)
-  -<a href="https://gpac.wp.mines-telecom.fr/downloads/">MP4Box</a>
-  -<a href="https://code.google.com/archive/p/mp4v2/">m4chaps</a>
+<ul>
+  <li>one or more text files in <a href="https://daringfireball.net/projects/markdown/syntax">markdown</a> format (each chapter should have its own file, they should all be located inside directory 'md')</li>
+  <li>a cover image (jpg or png)</li>
+  <li>a YAML file containing chapter names (simply edit toc.yaml)</li>
+  <li><a href="https://www.python.org/downloads/">python</a></li>
+  <li><a href="http://pandoc.org/installing.html">pandoc</a></li>
+  <li><a href="http://www.speech.cs.cmu.edu/flite/doc/flite_4.html">flite</a></li>
+  <li>sox (available as package or you can compile)</li>
+  <li><a href="https://ffmpeg.org/download.html">ffmpeg</a></li>
+  <li>ffprobe (installed with ffmpeg)</li>
+  <li><a href="https://gpac.wp.mines-telecom.fr/downloads/">MP4Box</a></li>
+  <li><a href="https://code.google.com/archive/p/mp4v2/">m4chaps</a></li>
+</ul>
 
 After installing all required software and downloading these files, make sure you have your content in markdown format (inside directory 'md') and run, <strong>in this order</strong>:
-
-  -create-chapters.py
-  -get-durations.py
-  -pack-chapters.py
+<ul>
+  <li>create-chapters.py</li>
+  <li>get-durations.py</li>
+  <li>pack-chapters.py</li>
+</ul>
 
 To run these files, open your Terminal, navigate to the directory where the scripts are located and type
 
